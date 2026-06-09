@@ -1,0 +1,64 @@
+<!-- ==========================================
+     COMPONENT: Hero
+     File: components/hero.html
+     ========================================== -->
+<link rel="stylesheet" href="../assets/global.css">
+<link rel="stylesheet" href="hero.css">
+
+<section class="hero" id="home">
+  <!-- Layered background -->
+  <div class="hero__bg">
+    <div class="hero__bg-image" aria-hidden="true"></div>
+    <div class="hero__bg-overlay" aria-hidden="true"></div>
+    <div class="hero__bg-grain" aria-hidden="true"></div>
+  </div>
+
+  <!-- Vertical label -->
+  <div class="hero__side-label" aria-hidden="true">
+    <span>Established 1984</span>
+  </div>
+
+  <div class="container hero__content">
+    <div class="hero__text">
+      <p class="eyebrow hero__eyebrow">Premier Legal Counsel</p>
+      <h1 class="hero__headline">
+        The Sovereignty<br>
+        of <em>Excellence.</em>
+      </h1>
+      <p class="hero__body">
+        At Sovereign Law we redefine legal advocacy through meticulous precision and an unwavering commitment to our clients' global interests.
+      </p>
+      <div class="hero__actions">
+        <button
+          class="btn-primary"
+          onclick="openEmailModal('Consulta Inicial', 'Explorar nossa expertise', 'Conte-nos sobre seu desafio jurídico. Nossos sócios revisarão pessoalmente cada solicitação.')"
+        >
+          Explore Expertise
+        </button>
+        <button class="btn-outline" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+          Our Philosophy →
+        </button>
+      </div>
+    </div>
+
+    <!-- Decorative scales SVG -->
+    <div class="hero__visual" aria-hidden="true">
+      <svg class="hero__scales" viewBox="0 0 220 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="110" y1="20" x2="110" y2="260" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+        <line x1="30" y1="80" x2="190" y2="80" stroke="rgba(201,169,110,0.5)" stroke-width="1"/>
+        <line x1="30" y1="80" x2="60" y2="130" stroke="rgba(201,169,110,0.4)" stroke-width="1"/>
+        <line x1="190" y1="80" x2="160" y2="118" stroke="rgba(201,169,110,0.4)" stroke-width="1"/>
+        <ellipse cx="45" cy="138" rx="28" ry="10" stroke="rgba(201,169,110,0.6)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+        <ellipse cx="168" cy="125" rx="28" ry="10" stroke="rgba(201,169,110,0.6)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+        <circle cx="110" cy="20" r="4" fill="rgba(201,169,110,0.7)"/>
+        <rect x="96" y="258" width="28" height="4" fill="rgba(201,169,110,0.4)" rx="1"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero__scroll" aria-hidden="true">
+    <span class="hero__scroll-line"></span>
+    <span class="hero__scroll-text">scroll</span>
+  </div>
+</section>

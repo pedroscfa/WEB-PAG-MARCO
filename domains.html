@@ -1,0 +1,115 @@
+<!-- ==========================================
+     COMPONENT: Strategic Domains
+     File: components/domains.html
+     ========================================== -->
+<link rel="stylesheet" href="../assets/global.css">
+<link rel="stylesheet" href="domains.css">
+
+<section class="domains" id="expertise">
+  <div class="container">
+    <div class="domains__header reveal">
+      <div>
+        <p class="eyebrow">Practice Areas</p>
+        <h2 class="domains__title">Strategic Domains</h2>
+        <p class="domains__sub">
+          We navigate the most complex legal landscapes with a fusion of traditional wisdom and modern strategic innovation.
+        </p>
+      </div>
+      <a href="#" class="domains__all-link">All Practice Areas →</a>
+    </div>
+
+    <div class="domains__grid">
+      <!-- Featured card — Private Wealth -->
+      <article class="domain-card domain-card--featured reveal">
+        <div class="domain-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3 class="domain-card__title">Private Wealth</h3>
+        <p class="domain-card__desc">
+          Preserving legacies with sophisticated trust structures and global estate planning solutions tailored to ultra-high-net-worth individuals.
+        </p>
+        <button
+          class="domain-card__btn"
+          onclick="openEmailModal('Private Wealth', 'Fale sobre Private Wealth', 'Nossos especialistas em patrimônio privado estão prontos para atendê-lo com total discrição.')"
+        >
+          Consultar advogado
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </article>
+
+      <!-- Corporate M&A -->
+      <article class="domain-card reveal">
+        <div class="domain-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+          </svg>
+        </div>
+        <h3 class="domain-card__title">Corporate M&amp;A</h3>
+        <p class="domain-card__desc">
+          Navigating cross-border transactions and high-stakes mergers with architectural precision.
+        </p>
+        <button
+          class="domain-card__btn domain-card__btn--dark"
+          onclick="openEmailModal('Corporate M&A', 'Fale sobre Corporate M&A', 'Especialistas em fusões e aquisições transfronteiriças.')"
+        >
+          Consultar advogado
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </article>
+
+      <!-- Cyber Law -->
+      <article class="domain-card reveal">
+        <div class="domain-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="domain-card__title">Cyber Law</h3>
+        <p class="domain-card__desc">
+          Defending the frontier of digital sovereignty against global threats and regulatory complexities.
+        </p>
+        <button
+          class="domain-card__btn domain-card__btn--dark"
+          onclick="openEmailModal('Cyber Law', 'Fale sobre Cyber Law', 'Proteção jurídica digital de alto nível para corporações e indivíduos.')"
+        >
+          Consultar advogado
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </article>
+
+      <!-- International Arbitration -->
+      <article class="domain-card reveal">
+        <div class="domain-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+          </svg>
+        </div>
+        <h3 class="domain-card__title">Int'l Arbitration</h3>
+        <p class="domain-card__desc">
+          Resolving complex cross-border disputes with strategic acumen in leading arbitral forums worldwide.
+        </p>
+        <button
+          class="domain-card__btn domain-card__btn--dark"
+          onclick="openEmailModal('Arbitragem Internacional', 'Fale sobre Arbitragem', 'Resolução de disputas internacionais com experiência comprovada.')"
+        >
+          Consultar advogado
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </article>
+    </div>
+  </div>
+</section>

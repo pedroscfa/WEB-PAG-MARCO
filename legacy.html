@@ -1,0 +1,60 @@
+<!-- ==========================================
+     COMPONENT: Legacy & Stats
+     File: components/legacy.html
+     ========================================== -->
+<link rel="stylesheet" href="../assets/global.css">
+<link rel="stylesheet" href="legacy.css">
+
+<section class="legacy" id="profile">
+  <div class="container legacy__inner">
+    <!-- Text block -->
+    <div class="legacy__text reveal">
+      <p class="eyebrow">Our Track Record</p>
+      <h2 class="legacy__title">A Legacy of Discretion</h2>
+      <p class="legacy__body">
+        For four decades prior to establishing the firm, our founding partners worked at the intersection of law, commerce, and diplomacy. Over the years, we have cultivated a practice that few firms dare pursue — high-stakes advisory at the highest levels.
+      </p>
+      <blockquote class="legacy__quote">
+        <p>"Our authority in every field is the steady hand in the storm."</p>
+        <cite>— Julian Sovereign, Founding Partner</cite>
+      </blockquote>
+      <button
+        class="btn-ghost-dark legacy__email-btn"
+        onclick="openEmailModal('Contato Geral', 'Fale com nossa equipe', 'Nossa equipe responderá em até 24 horas com total discrição.')"
+      >
+        Entrar em contato
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Stats -->
+    <div class="legacy__stats">
+      <div class="legacy__stat-card legacy__stat-card--dark reveal">
+        <span class="legacy__stat-number">40+</span>
+        <span class="legacy__stat-label">Years of Excellence</span>
+        <p class="legacy__stat-desc">Decades of nuanced legal mastery across five continents.</p>
+        <button
+          class="legacy__stat-btn"
+          onclick="openEmailModal('Nossa História', 'Saiba mais sobre nossa história', 'Entre em contato para conhecer melhor nossa trajetória e filosofia.')"
+        >
+          Saiba mais →
+        </button>
+      </div>
+
+      <div class="legacy__stat-card legacy__stat-card--gold reveal">
+        <span class="legacy__stat-number">98%</span>
+        <span class="legacy__stat-label">Retention Rate</span>
+        <p class="legacy__stat-desc">Our clients return — because results speak louder than reputation.</p>
+        <button
+          class="legacy__stat-btn legacy__stat-btn--dark"
+          onclick="openEmailModal('Resultados', 'Fale sobre seus objetivos', 'Nossos sócios analisarão seu caso pessoalmente.')"
+        >
+          Fale conosco →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

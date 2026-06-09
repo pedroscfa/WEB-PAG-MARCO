@@ -1,0 +1,138 @@
+/* ==========================================
+   COMPONENT: Foundations
+   File: components/foundations.css
+   ========================================== */
+
+.foundations {
+  padding: var(--section-v) 0;
+  background: var(--bone);
+}
+
+.foundations__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.foundations__title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 300;
+  color: var(--ink);
+}
+
+/* Grid: mission wide + 3 values */
+.foundations__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.foundation-card {
+  padding: 44px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Mission card */
+.foundation-card--mission {
+  background: var(--white);
+}
+
+.foundation-card__icon {
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.foundation-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.foundation-card__body {
+  font-size: var(--text-sm);
+  color: var(--mist);
+  line-height: 1.8;
+  flex: 1;
+}
+
+.foundation-card__link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  transition: letter-spacing var(--dur-base);
+}
+
+.foundation-card__link:hover { letter-spacing: 0.08em; }
+
+/* Value cards */
+.foundation-card--value {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.foundation-card--value-active {
+  background: var(--slate);
+}
+
+.foundation-card__value-name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+}
+
+.foundation-card--value .foundation-card__body {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Email buttons on cards */
+.foundation-card__email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: auto;
+  transition: color var(--dur-base);
+  align-self: flex-start;
+  width: 100%;
+}
+
+.foundation-card__email:hover { color: var(--gold); }
+
+.foundation-card__email--light {
+  color: rgba(255,255,255,0.55);
+  border-top-color: rgba(255,255,255,0.1);
+}
+
+.foundation-card__email--light:hover { color: var(--white); }
+
+.foundation-card__email--gold {
+  color: var(--gold);
+  border-top-color: rgba(255,255,255,0.1);
+}
+
+.foundation-card__email--gold:hover { color: var(--gold-light); }
+
+@media (max-width: 1100px) {
+  .foundations__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .foundations__grid { grid-template-columns: 1fr; }
+}
