@@ -348,6 +348,102 @@ a { color: inherit; text-decoration: none; }
   aspect-ratio: 3/4;
   overflow: hidden;
   background: var(--slate);
+  cursor: pointer;
+}
+
+.gallery-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 15, 20, 0.88);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.gallery-overlay.open {
+  display: flex;
+}
+
+.gallery-modal {
+  width: min(1120px, calc(100% - 48px));
+  max-height: 90vh;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.99);
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 28px 80px rgba(13, 15, 20, 0.18);
+}
+
+.gallery-modal__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: var(--mist);
+  font-size: 1.75rem;
+  cursor: pointer;
+  transition: color var(--dur-base);
+}
+
+.gallery-modal__close:hover {
+  color: var(--ink);
+}
+
+.gallery-modal__header {
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.gallery-modal__title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 12px 0 12px;
+}
+
+.gallery-modal__desc {
+  font-size: var(--text-sm);
+  color: var(--mist);
+  line-height: 1.8;
+}
+
+.gallery-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gallery-card__img {
+  aspect-ratio: 4 / 5;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 18px 45px rgba(13, 15, 20, 0.12);
+  transition: transform var(--dur-base) var(--ease-elegant);
+}
+
+.gallery-card:hover .gallery-card__img {
+  transform: translateY(-4px);
+}
+
+.gallery-card figcaption {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
 }
 
 .attorney-card__photo--1 {
