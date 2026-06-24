@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sovereign Law — Premier legal counsel redefining excellence through meticulous precision and an unwavering commitment to our clients' global interests." />
+  <title>Sovereign Law — The Sovereignty of Excellence</title>
+
+  <!-- Consolidated styles -->
+  <link rel="stylesheet" href="global.css" />
+</head>
+<body>
+
+  <!-- =====================
+       NAVBAR
+       ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__brand">
+        <span class="navbar__brand-name">Sovereign Law</span>
+      </a>
+      <nav class="navbar__links" aria-label="Navegação principal">
+        <a href="#expertise" class="navbar__link">Expertise</a>
+        <a href="#attorneys" class="navbar__link">Attorneys</a>
+        <a href="#insights" class="navbar__link">Insights</a>
+        <a href="#profile" class="navbar__link">Firm Profile</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__search" aria-label="Pesquisar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+        <button
+          class="btn-primary navbar__cta"
+          onclick="openEmailModal('Consulta Privada', 'Solicitar uma consulta', 'Fale diretamente com um de nossos sócios. Toda consulta é tratada com discrição absoluta.')"
+        >Request Consultation</button>
+        <a href="index.html" class="btn-ghost-dark navbar__lang-switch" aria-label="Mudar para Português">PT</a>
+      </div>
+      <button class="navbar__hamburger" aria-label="Menu" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =====================
+       HERO
+       ===================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__bg-image" aria-hidden="true"></div>
+      <div class="hero__bg-overlay" aria-hidden="true"></div>
+      <div class="hero__bg-grain" aria-hidden="true"></div>
+    </div>
+    <div class="hero__side-label" aria-hidden="true"><span>Established 1984</span></div>
+    <div class="container hero__content">
+      <div class="hero__text">
+        <p class="eyebrow hero__eyebrow">Premier Legal Counsel</p>
+        <h1 class="hero__headline">The Sovereignty<br>of <em>Excellence.</em></h1>
+        <p class="hero__body">
+          At Sovereign Law we redefine legal advocacy through meticulous precision and an unwavering commitment to our clients' global interests.
+        </p>
+        <div class="hero__actions">
+          <button
+            class="btn-primary"
+            onclick="openEmailModal('Consulta Inicial', 'Explorar nossa expertise', 'Conte-nos sobre seu desafio jurídico. Nossos sócios revisarão pessoalmente cada solicitação.')"
+          >Explore Expertise</button>
+          <button
+            class="btn-outline"
+            onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})"
+          >Our Philosophy →</button>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <svg class="hero__scales" viewBox="0 0 220 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="110" y1="20" x2="110" y2="260" stroke="rgba(201,169,110,0.3)" stroke-width="1"/>
+          <line x1="30" y1="80" x2="190" y2="80" stroke="rgba(201,169,110,0.5)" stroke-width="1"/>
+          <line x1="30" y1="80" x2="60" y2="130" stroke="rgba(201,169,110,0.4)" stroke-width="1"/>
+          <line x1="190" y1="80" x2="160" y2="118" stroke="rgba(201,169,110,0.4)" stroke-width="1"/>
+          <ellipse cx="45" cy="138" rx="28" ry="10" stroke="rgba(201,169,110,0.6)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+          <ellipse cx="168" cy="125" rx="28" ry="10" stroke="rgba(201,169,110,0.6)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+          <circle cx="110" cy="20" r="4" fill="rgba(201,169,110,0.7)"/>
+          <rect x="96" y="258" width="28" height="4" fill="rgba(201,169,110,0.4)" rx="1"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">scroll</span>
+    </div>
+  </section>
+
+  <!-- =====================
+       STRATEGIC DOMAINS
+       ===================== -->
+  <section class="domains" id="expertise">
+    <div class="container">
+      <div class="domains__header reveal">
+        <div>
+          <p class="eyebrow">Practice Areas</p>
+          <h2 class="domains__title">Strategic Domains</h2>
+          <p class="domains__sub">We navigate the most complex legal landscapes with a fusion of traditional wisdom and modern strategic innovation.</p>
+        </div>
+        <a href="#" class="domains__all-link">All Practice Areas →</a>
+      </div>
+      <div class="domains__grid">
+        <article class="domain-card domain-card--featured reveal">
+          <div class="domain-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="domain-card__title">Private Wealth</h3>
+          <p class="domain-card__desc">Preserving legacies with sophisticated trust structures and global estate planning solutions tailored to ultra-high-net-worth individuals.</p>
+          <button class="domain-card__btn" onclick="openEmailModal('Private Wealth', 'Consulta sobre Private Wealth', 'Nossos especialistas em patrimônio privado estão prontos para atendê-lo com total discrição.')">
+            Consultar advogado
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </article>
+        <article class="domain-card reveal">
+          <div class="domain-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+            </svg>
+          </div>
+          <h3 class="domain-card__title">Corporate M&amp;A</h3>
+          <p class="domain-card__desc">Navigating cross-border transactions and high-stakes mergers with architectural precision.</p>
+          <button class="domain-card__btn domain-card__btn--dark" onclick="openEmailModal('Corporate M&A', 'Consulta sobre Corporate M&A', 'Especialistas em fusões e aquisições transfronteiriças.')">
+            Consultar advogado
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </article>
+        <article class="domain-card reveal">
+          <div class="domain-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="domain-card__title">Cyber Law</h3>
+          <p class="domain-card__desc">Defending the frontier of digital sovereignty against global threats and regulatory complexities.</p>
+          <button class="domain-card__btn domain-card__btn--dark" onclick="openEmailModal('Cyber Law', 'Consulta sobre Cyber Law', 'Proteção jurídica digital de alto nível para corporações e indivíduos.')">
+            Consultar advogado
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </article>
+        <article class="domain-card reveal">
+          <div class="domain-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+            </svg>
+          </div>
+          <h3 class="domain-card__title">Int'l Arbitration</h3>
+          <p class="domain-card__desc">Resolving complex cross-border disputes with strategic acumen in leading arbitral forums worldwide.</p>
+          <button class="domain-card__btn domain-card__btn--dark" onclick="openEmailModal('Arbitragem Internacional', 'Consulta sobre Arbitragem', 'Resolução de disputas internacionais com experiência comprovada.')">
+            Consultar advogado
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       TESTIMONIAL
+       ===================== -->
+  <section class="testimonial" id="about">
+    <div class="container testimonial__inner">
+      <div class="testimonial__label reveal">
+        <p class="eyebrow">Client Perspectives</p>
+        <h2 class="testimonial__headline">The mark of<br>true partnership.</h2>
+        <div class="testimonial__nav">
+          <button class="testimonial__arrow" id="tPrev" aria-label="Anterior">←</button>
+          <button class="testimonial__arrow" id="tNext" aria-label="Próximo">→</button>
+        </div>
+      </div>
+      <div class="testimonial__quotes" id="tQuotes">
+        <blockquote class="testimonial__quote active">
+          <p class="testimonial__text">"Sovereign Law doesn't just provide counsel; they provide clarity in the most chaotic market shifts. Their approach is as much an art form as it is a science."</p>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar"></div>
+            <div>
+              <strong class="testimonial__name">Marcus Aurelius Thorne</strong>
+              <span class="testimonial__role">Chief Executive, Thorne Capital Partners</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial__quote">
+          <p class="testimonial__text">"In forty years of international business, I've never encountered a firm that combines legal mastery with genuine strategic partnership the way Sovereign does."</p>
+          <footer class="testimonial__author">
+            <div class="testimonial__avatar testimonial__avatar--2"></div>
+            <div>
+              <strong class="testimonial__name">Isabelle Beaumont-Leclair</strong>
+              <span class="testimonial__role">Founder, BL Family Office</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="testimonial__cta reveal">
+        <button class="btn-outline testimonial__email-btn" onclick="openEmailModal('Parceria Estratégica', 'Torne-se um cliente', 'Fale com um sócio sobre como podemos ser o parceiro estratégico que sua empresa precisa.')">
+          Falar com um sócio
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       DISCRETION CTA
+       ===================== -->
+  <section class="discretion">
+    <div class="container discretion__inner">
+      <div class="discretion__text reveal">
+        <h2 class="discretion__headline">Discretion is the<br>ultimate luxury.</h2>
+        <p class="discretion__sub">Begin a private dialogue with our senior partners to discuss your strategic objectives. Every consultation is treated with absolute confidentiality.</p>
+      </div>
+      <div class="discretion__actions reveal">
+        <button class="btn-primary" onclick="openEmailModal('Reunião Privada', 'Agendar reunião privada', 'Fale diretamente com um sócio sênior. Sua solicitação será tratada com absoluto sigilo.')">
+          Schedule Private Briefing
+        </button>
+        <button class="btn-ghost-dark" onclick="openEmailModal('Perfil da Firma', 'Solicitar perfil da firma', 'Enviaremos nossa apresentação institucional de forma confidencial.')">
+          Download Firm Profile
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       LEGACY & STATS
+       ===================== -->
+  <section class="legacy" id="profile">
+    <div class="container legacy__inner">
+      <div class="legacy__text reveal">
+        <p class="eyebrow">Our Track Record</p>
+        <h2 class="legacy__title">A Legacy of Discretion</h2>
+        <p class="legacy__body">For four decades prior to establishing the firm, our founding partners worked at the intersection of law, commerce, and diplomacy. Over the years, we have cultivated a practice that few firms dare pursue — high-stakes advisory at the highest levels.</p>
+        <blockquote class="legacy__quote">
+          <p>"Our authority in every field is the steady hand in the storm."</p>
+          <cite>— MARCO ANTONIO, Founding Partner</cite>
+        </blockquote>
+        <button class="btn-ghost-dark legacy__email-btn" onclick="openEmailModal('Contato Geral', 'Fale com nossa equipe', 'Nossa equipe responderá em até 24 horas com total discrição.')">
+          Entrar em contato
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </button>
+      </div>
+      <div class="legacy__stats">
+        <div class="legacy__stat-card legacy__stat-card--dark reveal">
+          <span class="legacy__stat-number">40+</span>
+          <span class="legacy__stat-label">Years of Excellence</span>
+          <p class="legacy__stat-desc">Decades of nuanced legal mastery across five continents.</p>
+          <button class="legacy__stat-btn" onclick="openEmailModal('Nossa História', 'Saiba mais sobre nossa história', 'Entre em contato para conhecer melhor nossa trajetória e filosofia.')">Saiba mais →</button>
+        </div>
+        <div class="legacy__stat-card legacy__stat-card--gold reveal">
+          <span class="legacy__stat-number">98%</span>
+          <span class="legacy__stat-label">Retention Rate</span>
+          <p class="legacy__stat-desc">Our clients return — because results speak louder than reputation.</p>
+          <button class="legacy__stat-btn legacy__stat-btn--dark" onclick="openEmailModal('Resultados', 'Fale sobre seus objetivos', 'Nossos sócios analisarão seu caso pessoalmente.')">Fale conosco →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOUNDATIONS
+       ===================== -->
+  <section class="foundations">
+    <div class="container">
+      <div class="foundations__header reveal">
+        <h2 class="foundations__title">Our Foundations</h2>
+      </div>
+      <div class="foundations__grid">
+        <div class="foundation-card foundation-card--mission reveal">
+          <div class="foundation-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3 class="foundation-card__title">Our Mission</h3>
+          <p class="foundation-card__body">To provide legal strategies that transcend transactional thinking, delivering long-term clarity, protection, and power to our clients through generational discretion and intellectual rigor.</p>
+          <a href="#" class="foundation-card__link">Learn More →</a>
+          <button class="foundation-card__email" onclick="openEmailModal('Nossa Missão', 'Conhecer nossa missão', 'Fale conosco para entender como nossa filosofia pode servir seus interesses.')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Enviar e-mail ao advogado
+          </button>
+        </div>
+        <div class="foundation-card foundation-card--value reveal">
+          <h3 class="foundation-card__value-name">Integrity</h3>
+          <p class="foundation-card__body">Every recommendation we make is grounded in absolute ethical standards. Our counsel is never for sale — only for those who demand excellence.</p>
+          <button class="foundation-card__email foundation-card__email--light" onclick="openEmailModal('Integridade', 'Falar sobre integridade e valores', 'Nossa equipe estará pronta para esclarecer nossa abordagem ética.')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Contatar advogado
+          </button>
+        </div>
+        <div class="foundation-card foundation-card--value foundation-card--value-active reveal">
+          <h3 class="foundation-card__value-name">Precision</h3>
+          <p class="foundation-card__body">Precision is the language we speak in. Every clause, structure, and strategy is crafted with an attention to detail that transforms complexity into clarity.</p>
+          <button class="foundation-card__email foundation-card__email--gold" onclick="openEmailModal('Precisão', 'Falar sobre nossa precisão jurídica', 'Veja como nossa abordagem meticulosa pode proteger seus interesses.')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Contatar advogado
+          </button>
+        </div>
+        <div class="foundation-card foundation-card--value reveal">
+          <h3 class="foundation-card__value-name">Legacy</h3>
+          <p class="foundation-card__body">We think across generations. The structures we build today are designed to protect, grow, and transfer wealth and authority for decades to come.</p>
+          <button class="foundation-card__email foundation-card__email--light" onclick="openEmailModal('Legado', 'Proteger seu legado', 'Nossos especialistas em planejamento sucessório estão à sua disposição.')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Contatar advogado
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       ATTORNEYS
+       ===================== -->
+  <section class="attorneys" id="attorneys">
+    <div class="container">
+      <div class="attorneys__header reveal">
+        <div>
+          <h2 class="attorneys__title">The Curators of <em>Justice</em></h2>
+          <p class="attorneys__sub">Our attorneys are more than their credentials. They are masters of their craft, each bringing a unique point of view to the pursuit of their clients.</p>
+        </div>
+        <a href="#" class="btn-ghost-dark attorneys__all-btn">View All Partners</a>
+      </div>
+      <div class="attorneys__grid">
+        
+        <article class="attorney-card reveal">
+          <div class="attorney-card__photo attorney-card__photo--2">
+            <div class="attorney-card__overlay">
+              <button class="attorney-card__email-btn" onclick="openEmailModal('MARCO ANTONIO', 'Contatar MARCO ANTONIO', 'Lead Counsel em Corporate M&A e Mercado de Capitais.')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Enviar e-mail
+              </button>
+            </div>
+          </div>
+          <div class="attorney-card__info">
+            <h3 class="attorney-card__name">MARCO ANTONIO</h3>
+            <p class="attorney-card__role">Lead Counsel, Corporate Division</p>
+            <p class="attorney-card__spec">Corporate M&amp;A · Capital Markets</p>
+          </div>
+        </article>
+        <article class="attorney-card reveal">
+          <div class="attorney-card__photo attorney-card__photo--3">
+            <div class="attorney-card__overlay">
+              <button class="attorney-card__email-btn" onclick="openEmailModal('Marcus Thorne', 'Contatar Marcus Thorne', 'Head of Digital Practice em Cyber Law e Proteção de Dados.')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Enviar e-mail
+              </button>
+            </div>
+          </div>
+          <div class="attorney-card__info">
+            <h3 class="attorney-card__name">Marcus Thorne</h3>
+            <p class="attorney-card__role">Head of Digital Practice</p>
+            <p class="attorney-card__spec">Cyber Law · Data Protection</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+       ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__brand-name">Sovereign Law</span>
+        <p class="footer__tagline">Redefining the boundaries of legal excellence since 1984.</p>
+        <button class="footer__cta" onclick="openEmailModal('Consulta Geral', 'Inicie uma conversa', 'Nossa equipe responderá à sua mensagem em até 24 horas com total discrição.')">Iniciar conversa →</button>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-heading">Expertise</h4>
+          <a href="#">Private Wealth</a>
+          <a href="#">Corporate M&amp;A</a>
+          <a href="#">Cyber Law</a>
+          <a href="#">Int'l Arbitration</a>
+        </div>
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-heading">Firm</h4>
+          <a href="#">Our Philosophy</a>
+          <a href="#">Our Attorneys</a>
+          <a href="#">Insights</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer__nav-col">
+          <h4 class="footer__nav-heading">Contact</h4>
+          <a href="mailto:contato@sovereignlaw.com">contato@sovereignlaw.com</a>
+          <a href="tel:+5531900000000">+55 31 9000-0000</a>
+          <a href="#">Belo Horizonte, MG</a>
+          <a href="#">New York · London</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2025 Sovereign Law Firm. All Rights Reserved.</span>
+        <div class="footer__legal">
+          <a href="#">Legal Policy</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Agreement</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================
+       EMAIL MODAL
+       ===================== -->
+  <div class="email-modal-overlay" id="emailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="email-modal">
+      <button class="email-modal__close" onclick="closeEmailModal()" aria-label="Fechar">&#215;</button>
+      <p class="email-modal__eyebrow" id="modalContext">Consulta Particular</p>
+      <h2 class="email-modal__title" id="modalTitle">Fale com um sócio</h2>
+      <p class="email-modal__sub" id="modalSub">Toda consulta é tratada com absoluta discrição. Responderemos em até 24 horas.</p>
+      <form onsubmit="submitEmail(event)">
+        <input type="text"  name="name"    placeholder="Seu nome completo"    required autocomplete="name" />
+        <input type="email" name="email"   placeholder="E-mail corporativo"   required autocomplete="email" />
+        <input type="tel"   name="phone"   placeholder="Telefone (opcional)"          autocomplete="tel" />
+        <select name="area" required>
+          <option value="" disabled selected>Área de interesse</option>
+          <option value="private-wealth">Private Wealth</option>
+          <option value="corporate-ma">Corporate M&amp;A</option>
+          <option value="cyber-law">Cyber Law</option>
+          <option value="arbitration">Int'l Arbitration</option>
+          <option value="other">Outra área</option>
+        </select>
+        <textarea name="message" placeholder="Descreva brevemente sua necessidade jurídica…"></textarea>
+        <button type="submit" class="email-modal__submit">Enviar mensagem confidencial</button>
+      </form>
+      <p class="email-modal__privacy">🔒 Seus dados são protegidos e nunca compartilhados.</p>
+    </div>
+  </div>
+
+  <div class="gallery-overlay" id="galleryOverlay" role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+    <div class="gallery-modal">
+      <button class="gallery-modal__close" onclick="closeGalleryModal()" aria-label="Fechar galeria">&#215;</button>
+      <div class="gallery-modal__header">
+        <p class="eyebrow">Galeria de Advogados</p>
+        <h2 class="gallery-modal__title" id="galleryTitle">Conheça nosso corpo jurídico</h2>
+        <p class="gallery-modal__desc">Veja outros perfis e imagens dos nossos advogados sem sair da página principal.</p>
+      </div>
+      <div class="gallery-modal__grid">
+        <figure class="gallery-card">
+          <div class="gallery-card__img" style="background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80')"></div>
+          <figcaption>MARCO ANTONIO</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <div class="gallery-card__img" style="background-image:url('https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=80')"></div>
+          <figcaption>Marcus Thorne</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <div class="gallery-card__img" style="background-image:url('https://images.unsplash.com/photo-1551806230-e0d80a6876c9?w=900&q=80')"></div>
+          <figcaption>Sophia Delacroix</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <div class="gallery-card__img" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=80')"></div>
+          <figcaption>Ana Tavarez</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT --> 
+   <script src="index.js"></script>
+
+</body>
+</html>

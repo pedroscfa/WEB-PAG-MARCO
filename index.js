@@ -4,6 +4,23 @@
       navbar.classList.toggle('scrolled', window.scrollY > 60);
     });
 
+    /* ---- Mobile Menu ---- */
+    const hamburger = document.getElementById('hamburger');
+    if (hamburger && navbar) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = navbar.classList.toggle('open');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+
+      // Close menu when a navigation link is clicked
+      document.querySelectorAll('.navbar__link').forEach(link => {
+        link.addEventListener('click', () => {
+          navbar.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
     /* ---- Scroll reveal ---- */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
